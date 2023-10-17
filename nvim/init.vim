@@ -59,11 +59,12 @@ Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'habamax/vim-godot'
 Plug 'ray-x/starry.nvim'
+Plug 'justinmk/vim-sneak'
 call plug#end()
 
 
 
-" let starry_deep_black = v:true
+let starry_deep_black = v:true
 " let starry_darker_contrast=v:true
 set background=dark
 let g:everforest_background = 'hard'
@@ -79,6 +80,10 @@ nnoremap <C-w>j <C-w>h
 nnoremap <C-w>h <C-w>k
 nnoremap <C-w>k <C-w>j
 inoremap hh <Esc>
+
+" Sneak binds
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
